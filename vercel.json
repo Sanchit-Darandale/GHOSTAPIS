@@ -4,52 +4,12 @@
     {
       "src": "qr.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "weather.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "location.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "sms.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "caller.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "email.py",
-      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/qr(.*)",
       "dest": "qr.py"
-    },
-    {
-      "src": "/weather(.*)",
-      "dest": "weather.py"
-    },
-    {
-      "src": "/location(.*)",
-      "dest": "location.py"
-    },
-    {
-      "src": "/sms(.*)",
-      "dest": "sms.py"
-    },
-    {
-      "src": "/caller(.*)",
-      "dest": "caller.py"
-    },
-    {
-      "src": "/email(.*)",
-      "dest": "email.py"
     }
   ]
 }
