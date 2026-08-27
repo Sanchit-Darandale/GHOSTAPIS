@@ -52,7 +52,10 @@ async def genqr(
         qr_data, qr_size = qr_request.data, qr_request.size
 
     else:
-        return {"error": "data is required"}
+        return {
+            "Error": "data parameter is required",
+            "Developer": "Sanchit"    
+        }
 
     return Response(
         make_qr(qr_data, qr_size),
@@ -76,7 +79,10 @@ async def hostqr(
         qr_data, qr_size = qr_request.data, qr_request.size
 
     else:
-        return {"error": "data is required"}
+        return {
+            "Error": "data is required",
+            "Developer": "Sanchit"    
+        }
 
     png = make_qr(qr_data, qr_size)
 
@@ -109,5 +115,6 @@ def home():
         "api": "DS QR Generator API",
         "generate": "/qr/genqr?data={data}&size={size}",
         "host": "/qr/hostqr?data={data}&size={size}",
-        "rate_limit": "30 requests/minute"
+        "rate_limit": "30 requests/minute",
+        "developer": "Sanchit"    
     }
