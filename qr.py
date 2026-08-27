@@ -80,7 +80,7 @@ async def hostqr(
 
     else:
         return {
-            "Error": "data is required",
+            "Error": "data parameter is required",
             "Developer": "Sanchit"    
         }
 
