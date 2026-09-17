@@ -109,6 +109,10 @@ async def hostqr(
         "uploadedAt": upload_result.get("uploadedAt")
     }
 
+@app.get("/")
+def dash():
+    return {"Status": "Working"}
+    
 @app.get("/qr")
 def home():
     return {
