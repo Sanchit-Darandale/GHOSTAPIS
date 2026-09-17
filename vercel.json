@@ -10,6 +10,9 @@
     {
       "src": "/qr(.*)",
       "dest": "qr.py"
+    },{
+      "src": "/",
+      "dest": "qr.py"
     }
   ]
 }
